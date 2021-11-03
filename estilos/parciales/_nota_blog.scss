@@ -1,0 +1,65 @@
+@import "./responsive";
+
+/*HERO SLIDER CATEGORIA*/
+
+/*LISTADO DE COLECCIONES*/
+#espacio {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.container__notablog__tokyo {
+  width: 50%;
+  height: 1400px;
+  margin-top: 200px;
+  background-color: white;
+  margin: auto;
+  @extend %box-shadow;
+  .container__notablog__tokyo--imagen {
+    width: 100%;
+  }
+  @include laptop_large {
+    width: 65%;
+  }
+
+  @include tablet {
+    height: 1650px;
+  }
+  .container__notablog__tokyo--tittle {
+    width: 100%;
+    height: 70px;
+    text-transform: uppercase;
+
+    background-color: red;
+    color: white;
+    font-weight: 900;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 30px;
+    @include laptop {
+      height: 90px;
+    }
+  }
+  .container__notablog__tokyo--paragraph {
+    width: 90%;
+    margin: auto;
+    font-size: 1.6rem;
+    color: #1c171d;
+    font-weight: 300;
+  }
+}
+
+.especial {
+  @include laptop {
+    text-align: center;
+  }
+}
+
+/*FOOTER CON BOOSTRAP*/
+
+.footer__tittle {
+  display: none;
+}
+.extender {
+  width: 280px;
+}

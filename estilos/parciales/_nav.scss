@@ -1,0 +1,44 @@
+@import "./responsive";
+
+.containerNav {
+  background-color: #1c171d;
+  width: 60%;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @include laptop_large {
+    width: 80%;
+  }
+
+  @include laptop {
+    width: 90%;
+  }
+
+  @include tablet {
+    width: 100%;
+  }
+  .containerNav__menu {
+    list-style: none;
+    display: inline-block;
+    .containerNav__itemMenu__link {
+      list-style: none;
+      text-decoration: none;
+      font-size: 1.6rem;
+      color: #f9f9f9;
+      font-weight: 900;
+      transition-duration: 0.5s;
+      @include tablet {
+        font-size: 1.5rem;
+        margin: -10px;
+      }
+    }
+    .containerNav__itemMenu {
+      display: inline-block;
+      margin-right: 30px;
+      position: relative;
+    }
+  }
+}

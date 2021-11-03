@@ -1,0 +1,150 @@
+@import "./responsive";
+
+/*HERO SLIDER CATEGORIA*/
+
+/*LISTADO DE COLECCIONES*/
+#espacio {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#parche {
+  width: 100%;
+  height: 100%;
+}
+
+.containerColecciones {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .containerColecciones__tittle {
+    @extend %tittle-black;
+  }
+  .span {
+    color: $color-red;
+  }
+  .containerColecciones__paragraph {
+    font-size: 1.6rem;
+    color: #1c171d;
+    font-weight: 300;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    text-align: center;
+  }
+}
+
+.containerCardsBlog {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  @include laptop_large {
+    width: 90%;
+  }
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .containerCardsBlog__cajaColecciones {
+    background-color: #f9f9f9;
+    height: 500px;
+    width: 375px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    @extend %box-shadow;
+    @include laptop {
+      margin: 10px;
+      height: 580px;
+    }
+
+    @include tablet {
+      margin: 10px;
+      height: 500px;
+    }
+    .containerCardsBlog__cajaColecciones__imagen--1 {
+      width: 100%;
+      height: 60%;
+    }
+    .containerCardsBlog__cajaColecciones__imagen--2 {
+      background-image: url(../../assets/imagenes/notaRanma.png);
+      background-position: center;
+      width: 100%;
+      height: 60%;
+    }
+    .containerCardsBlog__cajaColecciones__imagen--3 {
+      background-image: url(../../assets/imagenes/notaTokyoRevengers.png);
+      background-position: right;
+      width: 100%;
+      height: 60%;
+    }
+    .containerCardsBlog__cajaColecciones__imagen--4 {
+      background-image: url(../../assets/imagenes/notaBladeRunner.png);
+      background-position: top;
+      width: 100%;
+      height: 60%;
+    }
+    .containerCardsBlog__cajaColecciones__imagen--5 {
+      background-image: url(../../assets/imagenes/notaChaiwa.png);
+      background-position: center;
+      width: 100%;
+      height: 60%;
+    }
+
+    .containerCardsBlog__cajaColecciones__imagen--6 {
+      background-image: url(../../assets/imagenes/notaSpy.png);
+      background-position: center;
+      width: 100%;
+      height: 60%;
+    }
+  }
+
+  .containerCardsBlog__textoCaja {
+    .containerCardsBlog__cajaColecciones__tittle {
+      font-size: 2rem;
+      margin-top: 10px;
+      margin-left: 20px;
+      color: #1c171d;
+      font-weight: 900;
+      text-transform: uppercase;
+    }
+    .containerCardsBlog__cajaColecciones__paragraph {
+      font-size: 1.6rem;
+      color: #1c171d;
+      font-weight: 300;
+      margin-top: 10px;
+      margin-left: 20px;
+    }
+    .containerCardsBlog__cajaColecciones__btn {
+      background-color: #cc0000;
+      width: 100px;
+      height: 30px;
+      margin-top: 13px;
+      margin-left: 20px;
+      text-align: center;
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .containerCardsBlog__cajaColecciones__btn--interior {
+        text-decoration: none;
+        color: #f9f9f9;
+        font-weight: 900;
+        font-size: 1.6rem;
+      }
+    }
+  }
+}
+
+/*FOOTER CON BOOSTRAP*/
+
+.footer__tittle {
+  display: none;
+}
+.extender {
+  width: 280px;
+}

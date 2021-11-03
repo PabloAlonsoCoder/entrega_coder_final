@@ -1,0 +1,194 @@
+@import "./responsive";
+
+/*HERO SLIDER CATEGORIA*/
+
+/*--PRESENTACION DEL LOCAL*/
+.containerSliderPaginas {
+  @extend %br-categorias;
+  .containerSliderPaginas__tittle {
+    @extend %tittle-hero-categorias;
+  }
+  .span {
+    color: $color-red;
+  }
+}
+
+.containerlocal {
+  margin: auto;
+  width: 80%;
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  @include laptop {
+    width: 100%;
+  }
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+    height: 700px;
+  }
+
+  .containerlocal__photo {
+    height: 400px;
+    width: 500px;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.61);
+    -webkit-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.61);
+    -moz-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.61);
+    @include laptop {
+      margin-left: 15px;
+      margin-right: 15px;
+    }
+  }
+  .containerlocal__paragraph {
+    font-size: 1.6rem;
+    color: #1c171d;
+    font-weight: 300;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    @include laptop {
+      font-size: 1.3rem;
+      width: 90%;
+    }
+  }
+
+  .containerlocal__redes {
+    width: 32px;
+    height: 32px;
+    transition-duration: 0.5s;
+  }
+  h3 {
+    font-size: 2rem;
+    color: #cc0000;
+    font-weight: 900;
+    text-transform: uppercase;
+  }
+}
+
+/*--FRANQUICIAS QUE TRABAJAMOS*/
+
+.containerFranquicias {
+  background-image: url(../assets/imagenes/shopBr.jpg);
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+
+  .containerFranquicias__tittle {
+    @extend %tittle-white;
+  }
+
+  .containerFranquicias__img {
+    height: 150px;
+    margin: 20px;
+  }
+
+  .containerfranquicias__paragraph {
+    font-size: 1.6rem;
+    margin-top: 30px;
+    color: #f9f9f9;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 0px;
+    @include tablet {
+      width: 80%;
+    }
+  }
+}
+
+#borrar2 {
+  @include laptop {
+    display: none;
+  }
+}
+
+/*EQUIPO*/
+
+.equipo__tittle {
+  @extend %tittle-black;
+  .span {
+    color: $color-red;
+  }
+}
+
+.equipo__paragraph {
+  font-size: 1.6rem;
+  margin-top: 30px;
+  color: $color-black;
+  font-weight: 300;
+  text-align: center;
+  margin-top: 0px;
+}
+
+.containerEquipo {
+  height: 350px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 50%;
+  margin: auto;
+  @include laptop_large {
+    width: 65%;
+  }
+  @include laptop {
+    width: 80%;
+  }
+
+  @include tablet {
+    width: 100%;
+  }
+
+  .containerEquipo__photo--1 {
+    background-image: url(../assets/imagenes/equipoNacho.png);
+    background-position: center;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+  }
+
+  .containerEquipo__photo--2 {
+    background-image: url(../assets/imagenes/equipoNatalia.png);
+    background-position: center;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+  }
+
+  .containerEquipo__photo--3 {
+    background-image: url(../assets/imagenes/equipoMarilu.png);
+    background-position: right;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+  }
+
+  .containerEquipo__nombre {
+    font-size: 2rem;
+    color: #1c171d;
+    font-weight: 900;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .containerEquipo__cargo {
+    font-size: 1.6rem;
+    color: #cc0000;
+    font-weight: 900;
+    text-align: center;
+  }
+}
+
+/*FOOTER CON BOOSTRAP*/
+
+.footer__tittle {
+  display: none;
+}
+.extender {
+  width: 280px;
+}
